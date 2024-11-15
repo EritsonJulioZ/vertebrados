@@ -1,0 +1,41 @@
+package com.example.vertebrados;
+
+public class Vertebrados {
+    private int idVertebrados;
+    private String nombreCientifico;
+    private String nombreComun;
+    private String clasificacion;
+
+
+    public int getIdVertebrados() {
+        return idVertebrados;
+    }
+
+    public void setIdVertebrados(int idVertebrados) {
+        this.idVertebrados = idVertebrados;
+    }
+
+    public String getNombreCientifico() {
+        return nombreCientifico;
+    }
+
+    public void setNombreCientifico(String nombreCientifico) {
+        this.nombreCientifico = nombreCientifico;
+    }
+
+    public String getNombreComun() {
+        return nombreComun;
+    }
+
+    public void setNombreComun(String nombreComun) {
+        this.nombreComun = nombreComun;
+    }
+
+    public String getClasificacion() {
+        return clasificacion;
+    }
+
+    public void setClasificacion(String clasificacion) {
+        this.clasificacion = clasificacion;
+    }
+}

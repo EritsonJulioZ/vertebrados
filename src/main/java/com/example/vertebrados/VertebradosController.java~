@@ -122,14 +122,13 @@ public class VertebradosController implements Initializable {
         txtCommonName.clear();
         txtIdentificationNumber.clear();
         txtClassification.getSelectionModel().selectFirst();
-        btnSave.setDisable(false);
     }
 
     @FXML
     void deleteAnimal(ActionEvent event) {
         String delete = "delete from animales where id_animal = ?";
         con = DatabaseConnection.getConnection();
-
+        
         try{
             st = con.prepareStatement(delete);
             st.setInt(1, id);
